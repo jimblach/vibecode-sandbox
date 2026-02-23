@@ -1,0 +1,16 @@
+# Use LF in working tree + repo for text by default
+* text=auto eol=lf
+
+# Windows scripts should stay CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Treat common binary files as binary (no line-ending conversions)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
