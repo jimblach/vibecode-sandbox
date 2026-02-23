@@ -1,4 +1,4 @@
-# Vibe Coding Prompts Log
+﻿# Vibe Coding Prompts Log
 
 ## Lesson 1
 - Goal: Learn Git basics (diff → stage → commit → push) and set up a prompts log.
@@ -32,3 +32,32 @@
 очень много файлов, засорит репозиторий
 3) Что означает “Your branch is up to date with origin/main”?
 что нет незакомиченных изменений
+## Lesson 2 — Codex + Vite (React)
+
+### Быстрый старт (команды)
+- Git Bash:
+  - `cd /c/Projects/vibecode-sandbox/vibe-sandbox`
+  - `npm install`
+  - `npm run dev`
+- PowerShell:
+  - `cd C:\Projects\vibecode-sandbox\vibe-sandbox`
+  - `npm install`
+  - `npm run dev`
+
+### Prompt: План → одно изменение → diff (для Codex)
+Ты — Codex в VS Code. Сначала предложи короткий план (3–6 пунктов).
+Затем сделай ОДНО изменение в проекте, покажи diff и остановись.
+Не делай второе изменение, пока я не напишу "OK, делай дальше".
+
+### Prompt: Минимальный фикс по ошибке
+Сначала попроси полный текст ошибки (и где она появилась) или скрин.
+Потом предложи самый маленький фикс (1–3 действия) и объясни в 1–2 предложениях, почему это работает.
+
+### Prompt: Правка только в одном файле
+Открой файл <PATH>. Измени только его.
+Не трогай другие файлы. Покажи diff.
+
+### Типовые проблемы Windows (шпаргалка)
+- Dev server работает, пока открыт терминал с `npm run dev`. Закрыл/убил терминал → сайт на localhost упал.
+- Пути: Git Bash использует `/c/...`, PowerShell — `C:\...`.
+- PowerShell может блокировать `npm.ps1` (Execution Policy). Быстрый обход: запускай npm в Git Bash.
